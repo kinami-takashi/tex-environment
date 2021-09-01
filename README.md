@@ -9,9 +9,11 @@ Dockerのコンテナ内でtexをbuild
     $ docker built -t tex
     ```
 </br>
+
 - VScodeをダウンロード
 </br>
 </br>
+
 - VScodeに下記の拡張機能を追加
     - TeX Workshop
     - Latex language support
