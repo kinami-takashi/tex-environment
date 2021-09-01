@@ -8,15 +8,12 @@ Dockerのコンテナ内でtexをbuild
     ```
     $ docker built -t tex
     ```
-</br>
 
 - VScodeをダウンロード
-</br>
 
 - VScodeに下記の拡張機能を追加
     - TeX Workshop
     - Latex language support
-</br>
 
 - VScodeの左上の「ファイル」→「ユーザー設定」→「設定[Ctrl+,]」→右上あたりのアイコン「設定（JSON）を開く」をクリックして `setting.json`下記のように追記
     ```
@@ -82,12 +79,10 @@ Dockerのコンテナ内でtexをbuild
     ```
     デフォルトだとtexファイルを保存した時に `setting.json`の `latex-workshop.latex.recipes`の一番上のレシピが実行されるので「platex」→「platex」→「dvipdfmx」の順番で
     コンパイルされる．
-    </br>
 
     言い換えると，2番目のbibtexを適応したレシピは保存しただけでは実行されないので下記の設定を行う．  
     1.  「ファイル」→「ユーザー設定」→「キーボードショートカット[Ctrl+K Ctrl+S]」  
     2. 「LaTeX Workshop:Build with recipe」で検索して任意のショートカットを設定（以降の説明では，ショートカットキーに`alt`+`b`を設定したと仮定して進める）
-    </br>
 
     上記の設定が完了した状態で，bibファイルを適応したいときはtexファイルを保存する代わりに`alt` +`b`→ `bib_compile`を選択．  
     生成されるpdfにbibファイルが適応（参考文献が追加）されていればOK
