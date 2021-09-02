@@ -3,7 +3,7 @@ Dockerのコンテナ内でtexをbuild
 
 # 手順
 ※ dockerはインストールされている前提です．
-- 下記コマンドで `Dockerfile`をbuild
+- 下記コマンドで `Dockerfile`をbuild  
     注意： 後述の `setting.json` で指定するものと同じimage名を指定してbuild
     ```
     $ docker built -t tex
