@@ -1,0 +1,33 @@
+@comment
+{
+  著者の名前：日本語論文の「苗字名前」の順
+  英語論文の場合には「Firstname Familyname」．「Firstname」は先頭アルファベットとドットだけでもOK
+  著者と著者の間は「, 」とし，最後の著者の前には「, 」の代わりに「and」に
+  題目はダブルクオーテーションで囲っているものと，そうでないものどちらでも構わないが統一
+  英語題目については，単語の先頭(冠詞と前置詞以外)を大文字にした方が見栄えする
+  学会名や論文誌名
+  略すか略さないか統一．英語の場合には全て大文字だと分かりにくい．ページに限りがある場合「in」を入れると，ほぼ全てに必要なので省略で構いません．
+  学術論文誌は巻(Vol)，号(no)，ページ番号を記載
+  年号は必要だが，月までは必要ない．開催場所の情報も不要　https://yoshitakaushiku.net/how_to_write_references.html
+  author1, author2, ..., "title", conference or booktitle, vol, no, pp, year.
+  省略するパターン（紙面に限りがある場合） ※ 「author1 et al.」の形はパワポ等でのみ使用
+  author1 author2, ...,  “title”, abb of conference or booktitle, vol, no, pp, year.
+  表示させたくない情報は
+  memo = {OOOO}
+  と記述すれば削除せずに非表示にできる
+}
+@inproceedings{point_net,
+  title      = {{{PointNet}}: {{Deep Learning}} on {{Point Sets}} for {{3D Classification}} and {{Segmentation}}},
+  shorttitle = {{{PointNet}}},
+  booktitle  = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+  author     = {Charles, R. Qi and Su, Hao and Kaichun, Mo and Guibas, Leonidas J.},
+  pages      = {77--85},
+  doi        = {10.1109/CVPR.2017.16},
+  isbn       = {978-1-5386-0457-1},
+  year       = {2017},
+  memo       = {publisher  = {{IEEE}}},
+  memo       = {booktitle  = {2017 {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})}},
+  memo       = {month      = {jul}},
+  memo       = {address    = {{Honolulu, HI}}},
+  memo       = {language   = {en}}
+}

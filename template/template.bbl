@@ -1,0 +1,10 @@
+\begin{thebibliography}{1}
+
+\bibitem{point_net}
+R.~Qi Charles, Hao Su, Mo~Kaichun, and Leonidas~J. Guibas.
+\newblock {{PointNet}}: {{Deep Learning}} on {{Point Sets}} for {{3D
+  Classification}} and {{Segmentation}}.
+\newblock In {\em IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition}, pp. 77--85, 2017.
+
+\end{thebibliography}

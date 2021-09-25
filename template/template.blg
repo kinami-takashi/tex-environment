@@ -1,0 +1,52 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: template.aux
+The style file: junsrt.bst
+Illegal, another \bibstyle command---line 35 of file template.aux
+ : \bibstyle
+ :          {jIEEEtran.bst}
+I'm skipping whatever remains of this command
+Database file #1: reference.bib.bib
+You've used 1 entry,
+            2270 wiz_defined-function locations,
+            544 strings with 4318 characters,
+and the built_in function-call counts, 425 in all, are:
+= -- 32
+> -- 13
+< -- 1
++ -- 5
+- -- 4
+* -- 21
+:= -- 56
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 26
+empty$ -- 42
+format.name$ -- 8
+if$ -- 103
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 1
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 21
+stack$ -- 0
+substring$ -- 24
+swap$ -- 9
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 4
+width$ -- 2
+write$ -- 13
+is.kanji.str$ -- 13
+(There was 1 error message)
