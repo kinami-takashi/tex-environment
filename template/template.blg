@@ -1,52 +1,70 @@
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: template.aux
-The style file: junsrt.bst
-Illegal, another \bibstyle command---line 35 of file template.aux
- : \bibstyle
- :          {jIEEEtran.bst}
-I'm skipping whatever remains of this command
+The style file: jIEEEtran.bst.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+Reallocated singl_function (elt_size=4) to 200 items from 150.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 150 items from 100.
 Database file #1: reference.bib.bib
+-- jIEEEtran.bst 0.16 (2020/09/09) by Haruki Ejiri and Yoshi Ri.
+-- https://github.com/ehki/jIEEEtran/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information for IEEEtran.bst.
+-- See aloso "howtouse.pdf" manual for usase information for jIEEEtran.bst and IEEJtran.bst.
+
+Done.
 You've used 1 entry,
-            2270 wiz_defined-function locations,
-            544 strings with 4318 characters,
-and the built_in function-call counts, 425 in all, are:
-= -- 32
-> -- 13
-< -- 1
-+ -- 5
+            6248 wiz_defined-function locations,
+            1255 strings with 10939 characters,
+and the built_in function-call counts, 1157 in all, are:
+= -- 126
+> -- 22
+< -- 7
++ -- 12
 - -- 4
-* -- 21
-:= -- 56
-add.period$ -- 3
+* -- 70
+:= -- 151
+add.period$ -- 2
 call.type$ -- 1
 change.case$ -- 1
-chr.to.int$ -- 0
+chr.to.int$ -- 18
 cite$ -- 1
-duplicate$ -- 26
-empty$ -- 42
-format.name$ -- 8
-if$ -- 103
+duplicate$ -- 66
+empty$ -- 85
+format.name$ -- 13
+if$ -- 277
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
+missing$ -- 11
+newline$ -- 26
 num.names$ -- 1
-pop$ -- 9
+pop$ -- 34
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 0
-skip$ -- 21
+quote$ -- 4
+skip$ -- 85
 stack$ -- 0
-substring$ -- 24
-swap$ -- 9
+substring$ -- 43
+swap$ -- 47
 text.length$ -- 1
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
+top$ -- 6
+type$ -- 1
 warning$ -- 0
-while$ -- 4
+while$ -- 5
 width$ -- 2
-write$ -- 13
-is.kanji.str$ -- 13
-(There was 1 error message)
+write$ -- 31
+is.kanji.str$ -- 2

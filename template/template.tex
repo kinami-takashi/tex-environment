@@ -2,7 +2,6 @@
 %https://tex.stackexchange.com/questions/289450/path-of-figures-in-different-directories-with-subfile-latex
 %----以下文字の大きさ，フォント，余白などを決定する設定----
 \documentclass[a4paper,10pt]{jsarticle}
-\bibliographystyle{junsrt} %参考文献の並べ順junsrtの場合，本文内で参照した順
 \setlength{\topmargin}{-17truemm}
 \setlength{\oddsidemargin}{-0.4truemm}
 \setlength{\textwidth}{160truemm}
@@ -139,11 +138,11 @@ PointNet\cite{point_net}を参照する．
 
 %参考文献(bibtex(参考文献を反映させるときはpbibtexコマンドを使用
 % \nocite{*} %http://regry358.hatenablog.com/entry/2014/10/16/140251 参照していない文献も表示
-\bibliographystyle{jIEEEtran.bst}
-\bibliography{reference.bib}
+\bibliographystyle{jIEEEtran.bst} % bstファイル（参考文献の参照方法を記述したファイル）にしたがって参考文献を記述
+\bibliography{reference.bib} % bibファイル（参考文献の一覧）を参照
 % https://github.com/ehki/jIEEEtran
 % IEEJtran.bst : 電気学会の日英両対応版
-% jIEEJtran.bst : IEEEtranの日本語対応版
+% jIEEJtran.bst : IEEEtranの日本語対応版 （元ファイルから若干編集）
 % mixej.py : 同一文献で日本語と英語を併記するためのスクリプト
 
 \end{document}
