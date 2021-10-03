@@ -1,0 +1,48 @@
+%----以下文字の大きさ，フォント，余白などを決定する設定----
+\documentclass[a4paper,10pt]{jsarticle}
+\setlength{\topmargin}{-17truemm}
+\setlength{\oddsidemargin}{-0.4truemm}
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{247truemm}
+%-------------------------------------------------
+%コンパイル方法　platex hoge.tex →　platex hoge.tex → dvipdfmx hoge(サブファイルでも実行可能※ただし，サブファイルでコンパイルすると「他のサブファイルで定義された」ラベルを参照した時に?になる)
+%bibtex適用のコンパイル　platex hoge.tex → pbibtex hoge.tex → platex hoge.tex →　platex hoge.tex → dvipdfmx hoge（メインファイルでのみ実行可能※サブファイルではコンパイルエラーが起きる）
+%\usepackage{}：Latexで拡張機能を使用するための宣言-------------
+\usepackage{amsmath}%数式関連のパッケージ（alignなど）
+\usepackage{bm}%太字でベクトルを表記
+
+\usepackage[dvipdfmx]{hyperref}%しおり作成のためのパッケージ
+\usepackage{pxjahyper}%しおりを日本語化
+
+\title{タイトル}%タイトル
+\author{田中太郎}%著者
+\date{2000年1月1日}%日付
+
+\begin{document}%本文の始まり
+\maketitle%上記で設定したtitle,author,dateを表示
+
+\section{数式}
+
+式(\ref{eq:hoge})を参照します．
+
+文章内で $y = x$ のように数式を記述することも可能です．
+
+\begin{gather}
+    x_{1}=L_{1} \cos \theta_{1}
+    \label{eq:hoge}
+\end{gather}
+
+\end{document}
+
+%-------ラベル，参照----------
+%\label{eq:hoge}
+
+%公式------------------
+%\begin{gather}
+%    x_{1}=L_{1} \cos \theta_{1}
+%    \label{eq:hoge}
+%\end{gather}
+
+%式--------------------
+%$x_1$
+

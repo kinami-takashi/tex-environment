@@ -1,0 +1,43 @@
+%----以下文字の大きさ，フォント，余白などを決定する設定----
+\documentclass[a4paper,10pt]{jsarticle}
+\setlength{\topmargin}{-17truemm}
+\setlength{\oddsidemargin}{-0.4truemm}
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{247truemm}
+%-------------------------------------------------
+%コンパイル方法　platex hoge.tex →　platex hoge.tex → dvipdfmx hoge(サブファイルでも実行可能※ただし，サブファイルでコンパイルすると「他のサブファイルで定義された」ラベルを参照した時に?になる)
+%bibtex適用のコンパイル　platex hoge.tex → pbibtex hoge.tex → platex hoge.tex →　platex hoge.tex → dvipdfmx hoge（メインファイルでのみ実行可能※サブファイルではコンパイルエラーが起きる）
+%\usepackage{}：Latexで拡張機能を使用するための宣言-------------
+
+\usepackage[linesnumbered,ruled,lined, noend]{algorithm2e} %アルゴリズムを記述（外部パッケージ：https://www.ctan.org/pkg/algorithm2e）
+
+\usepackage{amsmath}%数式関連のパッケージ（alignなど）
+\usepackage{bm}%太字でベクトルを表記
+
+\usepackage[dvipdfmx]{hyperref}%しおり作成のためのパッケージ
+\usepackage{pxjahyper}%しおりを日本語化
+
+\title{タイトル}%タイトル
+\author{田中太郎}%著者
+\date{2000年1月1日}%日付
+
+\begin{document}%本文の始まり
+\maketitle%上記で設定したtitle,author,dateを表示
+
+\section{アルゴリズム}
+{\bf{Algorithm}} \ref{alg:hoge}を参照します．
+
+\begin{algorithm*}[H]
+    \small{
+        \caption{title}
+        \label{alg:hoge}
+        $x = 0;$
+        \For{$i=1, \cdots, n $}
+        {
+            $x += 1;$
+        }
+        \Return x
+    }
+\end{algorithm*}
+
+\end{document}

@@ -1,0 +1,44 @@
+%----以下文字の大きさ，フォント，余白などを決定する設定----
+\documentclass[a4paper,10pt]{jsarticle}
+\setlength{\topmargin}{-17truemm}
+\setlength{\oddsidemargin}{-0.4truemm}
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{247truemm}
+%-------------------------------------------------
+
+\usepackage{listings,jlisting}%ソースコードを埋め込むためのパッケージ(jlistingはサイトからDLする必要あり)
+%Windowsにjlistingパッケージを導入する https://mildtech.hatenablog.com/entry/2017/07/24/160324
+
+\lstset{%ソースコードを書き込む時の設定--------------------------------
+  language=C++,%言語
+  columns=[l]{fullflexible}, % 文字をつめる
+  basicstyle=\footnotesize,%
+  commentstyle=\textit,%
+  classoffset=1,%
+  keywordstyle=\bfseries,%
+	frame=tRBl,framesep=5pt,%枠線の種類 frame=singleならば一重枠
+  showstringspaces=false,%
+  numbers=left,stepnumber=1,numberstyle=\footnotesize,%
+  breaklines=true,%trueで１行が長い時に改行
+  firstnumber=1,%行番号が何番から始まるか
+  xrightmargin=1zw,%枠右側の余白
+  xleftmargin=1zw%枠左側の余白
+}%本文中に　\lstinputlisting[caption=キャプション,label=ラベル]{ファイル名}でソースコードを貼り付け
+%--------------------------------------------------------------------
+
+\title{タイトル}%タイトル
+\author{田中太郎}%著者
+\date{2000年1月1日}%日付
+
+\begin{document}%本文の始まり
+\maketitle%上記で設定したtitle,author,dateを表示
+
+\section{コード}
+コード\ref{code:hoge}を参照します．
+\lstinputlisting[language=python, caption = title, label = code:hoge]{code/code.py}
+
+\end{document}
+
+% -------　ソースコード -------------------
+% \lstinputlisting[language=python, caption = title, label = code:hoge]{code/code.py}
+

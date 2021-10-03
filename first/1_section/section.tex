@@ -1,0 +1,35 @@
+%----以下文字の大きさ，フォント，余白などを決定する設定----
+\documentclass[a4paper,10pt]{jsarticle}
+\setlength{\topmargin}{-17truemm}
+\setlength{\oddsidemargin}{-0.4truemm}
+\setlength{\textwidth}{160truemm}
+\setlength{\textheight}{247truemm}
+%-------------------------------------------------
+
+\usepackage[dvipdfmx]{hyperref}%しおり作成のためのパッケージ
+\usepackage{pxjahyper}%しおりを日本語化
+
+\title{タイトル}%タイトル
+\author{田中太郎}%著者
+\date{2000年1月1日}%日付
+
+\begin{document}%本文の始まり
+\maketitle%上記で設定したtitle,author,dateを表示
+
+\section{セクション}
+
+\subsection{サブセクション}
+
+\subsection{サブサブセクション}
+
+
+\end{document}
+
+% 公式------------------
+%\begin{gather}
+%    x_{1}=L_{1} \cos \theta_{1}
+%    \label{eq:hoge}
+%\end{gather}
+
+% 式--------------------
+%$x_1$
