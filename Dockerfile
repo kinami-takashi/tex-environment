@@ -37,17 +37,18 @@ RUN chmod 664 algorithm2e.sty
 # 下記コマンドで追加したパッケージを適応
 RUN mktexlsr
 
-
 # ---------------------------------------
-# https://zukucode.com/2019/06/docker-user.html
+# https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
 # rootでログインすると，全部のファイルがroot権限になって扱いが面倒なので，ユーザを作成
-# このDockerfileから作成されるdocker imageは管理者権限不要なのでパスワードは設定しない
-# ユーザーを作成
-ARG UID=1000
-RUN useradd -m -u ${UID} docker
+ARG DOCKER_UID=1000
+ARG DOCKER_USER=docker
+ARG DOCKER_PASSWORD=docker
+RUN useradd -m -s /bin/bash --uid ${DOCKER_UID} --groups sudo ${DOCKER_USER} \
+    && echo $DOCKER_USER ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$DOCKER_USER \
+    && chmod 0440 /etc/sudoers.d/$DOCKER_USER
 # 作成したユーザーに切り替える
-USER ${UID}
-# ---------------------------------------------
+USER ${DOCKER_USER}
+# -----------------------------------------
 
 # pbibtexの時に、現在地点のファイルを参照するので、作業ディレクトリをマウントするディレクトリに変更しておく
 WORKDIR /workdir
