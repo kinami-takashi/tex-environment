@@ -37,5 +37,17 @@ RUN chmod 664 algorithm2e.sty
 # 下記コマンドで追加したパッケージを適応
 RUN mktexlsr
 
+
+# ---------------------------------------
+# https://zukucode.com/2019/06/docker-user.html
+# rootでログインすると，全部のファイルがroot権限になって扱いが面倒なので，ユーザを作成
+# このDockerfileから作成されるdocker imageは管理者権限不要なのでパスワードは設定しない
+# ユーザーを作成
+ARG UID=1000
+RUN useradd -m -u ${UID} docker
+# 作成したユーザーに切り替える
+USER ${UID}
+# ---------------------------------------------
+
 # pbibtexの時に、現在地点のファイルを参照するので、作業ディレクトリをマウントするディレクトリに変更しておく
 WORKDIR /workdir
