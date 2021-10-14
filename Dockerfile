@@ -42,7 +42,6 @@ RUN mktexlsr
 # rootでログインすると，全部のファイルがroot権限になって扱いが面倒なので，ユーザを作成
 ARG DOCKER_UID=1000
 ARG DOCKER_USER=docker
-ARG DOCKER_PASSWORD=docker
 RUN useradd -m -s /bin/bash --uid ${DOCKER_UID} --groups sudo ${DOCKER_USER} \
     && echo $DOCKER_USER ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$DOCKER_USER \
     && chmod 0440 /etc/sudoers.d/$DOCKER_USER
