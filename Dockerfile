@@ -32,7 +32,22 @@ RUN unzip algorithm2e.zip
 RUN mv algorithm2e/tex/algorithm2e.sty .
 RUN chmod 664 algorithm2e.sty
 
+# LaTeX で表の空のセルに斜線を引く
+# https://onair.jp/archives/545.html
+# http://emath.s40.xrea.com/allinone.html
+# http://asazekt.seesaa.net/article/301099077.html
+RUN wget http://emath.s40.xrea.com/xdir/othersty/eclarith.zip
+RUN unzip eclarith.zip
+RUN chmod 664 eclarith.sty
+
+RUN wget http://emath.s40.xrea.com/lime/lime.cgi?0001 -O emathf051107c.zip
+RUN unzip emathf051107c.zip
+RUN unzip sty.zip 
+RUN chmod 664 emathT.sty
+RUN rm emathf051107c.zip sty.zip pdf.zip doc.zip
+
 #他のパッケージを追加するときも同様に「styファイルをwgetコマンドで「/usr/share/texlive/texmf-dist/tex/latex」にDL」→「mktexlsr」で適応すればOK
+
 
 # 下記コマンドで追加したパッケージを適応
 RUN mktexlsr
